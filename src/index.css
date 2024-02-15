@@ -38,3 +38,6 @@
     --accent: #256ed4;
   }
   
+body{
+    background-color: var(--background);
+}

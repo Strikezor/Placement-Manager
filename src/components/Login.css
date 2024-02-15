@@ -44,7 +44,7 @@
     font-size: 1rem;
 }
 
-input {
+form input {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
@@ -73,7 +73,7 @@ form {
   color: white;
 }
 form input,
-button {
+form button {
   width: 35vw !important;
   height: 50px;
 }
