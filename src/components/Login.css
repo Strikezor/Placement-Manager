@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css?family=Overlock SC:700|Overlock SC:400');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login,.signup{
+  background: black;
+  overflow: hidden;
+}
+.left,
+.right {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  background: var(--secondary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+.left h1{
+    font-family: Overlock SC;
+    font-size: 3rem;   
+    font-weight: 600;
+}
+.left h3{
+    font-family: Overlock SC;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.left p{
+    font-style: italic;
+    font-size: 1rem;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
+form {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.login-btn, .signup-btn {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background: var(--primary);
+  color: black;
+  cursor: pointer;
+}
+.login-btn:hover, .signup-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+form input,
+button {
+  width: 35vw !important;
+  height: 50px;
+}
+.google {
+  margin: 10px;
+  padding: 10px;
+  background-color: #c54141;
+  color: white;
+  font-weight: bolder;
+}
+.google:hover {
+  background-color: white;
+  color: #f44336;
+  font-weight: bolder;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 90%;
+}
+hr{
+    width: 100%;
+    margin: 10px;
+    color: white;
+    opacity: 0.5;
+}
