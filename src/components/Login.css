@@ -15,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--background);
 }
 .left {
   background: var(--secondary);
@@ -25,9 +26,15 @@
   align-items: center;
   text-align: center;
 }
+
 .logo {
   display: flex;
   flex-direction: row;
+}
+.logo i{
+    font-size: 5rem;
+    margin: 10px;
+    text-align: center;
 }
 .left h1{
     font-family: Overlock SC;

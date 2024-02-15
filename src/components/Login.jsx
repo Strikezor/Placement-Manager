@@ -1,6 +1,5 @@
 import React from "react";
 import "./Login.css";
-import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
 
 const Login = () => {
   return (
@@ -9,7 +8,7 @@ const Login = () => {
         <div className="row">
           <div className="col-12 col-lg-4 left">
             <div className="logo ">
-              <FontAwesomeIcon icon="fa-solid fa-user-graduate" />
+              <i className="fa-solid fa-user-graduate" />
               <h1>Placement <br /> Manager</h1>
             </div>
             <h3>Campus Recruitment Platform</h3>
@@ -22,7 +21,7 @@ const Login = () => {
             </div>
             <form action="">
               <button className="btn google">
-                <FontAwesomeIcon icon="fa-solid fa-google" />
+                <i className="fa-solid fa-brands fa-google mx-2" />
                 <span>Continue with Google</span>
               </button>
               <div className="or">

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Login.css";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Signup = () => {
   return (
@@ -23,6 +22,7 @@ const Signup = () => {
             </div>
             <form action="">
               <button className="btn google">
+                <i className="fa-brands fa-google mx-2"></i>
                 <span>Continue with Google</span>
               </button>
               <div className="or">

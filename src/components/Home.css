@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Overlock SC:700|Overlock SC:400');
+/* 
+:root[data-theme="light1"] {
+    --text: #0c080b;
+    --background: #f5f0f4;
+    --primary: #3f5f45;
+    --secondary: #dae4e7;
+    --accent: #62936c;
+}
+:root[data-theme="dark1"] {
+    --text: #f7f3f6;
+    --background: #0f0a0e;
+    --primary: #a0c0a6;
+    --secondary: #182225;
+    --accent: #6c9d76;
+} */
+
+
+:root[data-theme="light"] {
+    --text: #071427;
+    --background: #e9f0fb;
+    --primary: #224e8c;
+    --secondary: #d8e5f8;
+    --accent: #2b73da;
+  }
+  :root[data-theme="dark"] {
+    --text: #d8e5f8;
+    --background: #040b16;
+    --primary: #75a1de;
+    --secondary: #071427;
+    --accent: #256ed4;
+  }
+  
+  
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.home h1,.home h2,.home h3,.home h4,.home h5{
+    font-family: 'Overlock SC';
+    font-weight: 700;
+}
+
+
+.home html {font-size: 100%;} /* 16px */
+
+.home h1 {font-size: 3.8rem; /* 67.36px */
+    line-height: 0.9;}
+
+    .home h2 {font-size: 3.158rem; /* 50.56px */}
+
+    .home h3 {font-size: 2.369rem; /* 37.92px */}
+
+    .home h4 {font-size: 1.777rem; /* 28.48px */}
+
+    .home h5 {font-size: 1.333rem; /* 21.28px */}
+
+    .home small {font-size: 0.750rem; /* 12px */}
+
+.home button, .home .btn-primary , .home .btn{
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+.home p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: text;
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+.home a{
+    text-decoration: none;
+    color: var(--text);
+}
+.home a:hover{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.home ul,li{
+    list-style: none;
+}
+
+.home .toggle-theme{
+    background-color: var(--background);
+    color: var(--text);
+    border-radius: 20px;
+}
+.home .common-section{
+    padding: 5rem 0;
+    height: 100vh;
+}
+.home .high-text{
+    /* color: var(--accent); */
+    background: linear-gradient(120deg,var(--primary),var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* navbar css */
+
+.home .Navbar {
+    background-color: var(--background) ;
+    color: var(--text) ;
+    font-family: 'Overlock SC';
+}
+.home .Navbar .icon{
+    color: var(--text);
+    margin: 0 10px;
+    font-size: larger;
+    text-decoration: none;
+    
+}
+.home .navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text) ;
+}
+.home .navbar-brand:hover{
+    color: var(--primary);
+}
+
+.home .nav-link{
+    color: var(--text) ;
+}
+.home .nav-link:hover{
+    color: var(--primary);
+}   
+.home .nav-link:active{
+    color: var(--accent);
+}
+.home .navbar-toggler-icon{
+    color: var(--text) !important;
+}
+.home .nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+/* main section css  */
+
+.home .main-section
+{
+    display: grid;
+    place-content: center;
+    height: inherit;
+    
+}
+
+.home .bg-main{
+    height: 90vh;
+    position: relative;
+}
+.home .main-section-img{
+    max-width: 100%;
+    height: auto;
+    width: 80rem;
+}
+.home .main-section img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.4s ease-in-out;
+    /* box-shadow: var(--text); */
+}
+.home .main-section img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 50px -10px var(--primary);
+}
+
+.home .main-section .btn{
+    margin: 5px;
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 700;
+    padding: 15px 30px;
+    color: var(--background);
+    background-color: var(--primary);
+    text-decoration: none;
+    border-radius: 8px;
+    align-items: left;
+    
+}
+.home .main-section .btn:hover{
+    transform: translate(0, -3px);
+    box-shadow: 0 20px 80px -10px var(--primary);
+    background-color: var(--accent);
+}
+.home .main-section .btn:focus{
+    outline: none;
+}
+
+
+.home .lm-btn{
+    background-color: var(--secondary) !important;
+    color: var(--text)!important;
+    border: none;
+}
+.home .lm-btn a{
+    background: transparent;
+}
+
+/* services section css  */
+
+.home .services-section{
+    height: 100vh;
+}
+.home .services-section p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text);
+    letter-spacing: 0.07rem;
+    line-height: 1.3rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    background-color: transparent;
+}
+.home .services-section i{
+    font-size: 8rem;
+    color: var(--primary);
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.home .services-section h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+    background-color: transparent;
+}
+.home .card-box{
+    border-radius: 30px;
+    background-color: var(--secondary);
+    height: 55vh;
+    width: 45vh;
+}
+.home .services-section{
+    padding: 6rem 0 3rem 0;
+}
+
+.home .icon-span{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--secondary);
+    color: var(--primary);
+    
+}
+.home .icon-span a{
+    text-decoration: none;
+}
+
+.home .card-box:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* about section css  */
+
+.home .about-section{
+    height: 100vh;
+    padding: 3%;
+}
+
+.home .about-section h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text);
+    background-color: transparent;
+    line-height: 1.2;
+    margin-bottom: 0 !important;
+}
+.home .about-card .d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    /* background-color: var(--primary); */
+    /* color: var(--background); */
+}
+
+.home .about-card p,.home .about-card h2{
+    padding-left: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    /* background-color: var(--primary); */
+    /* color: var(--background); */
+}
+
+.home .about-card .d-flex:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0px 100px -50px var(--text) !important;
+}
+
+.home .about-section hr{
+    margin-bottom: 50px;
+}
+/* contact section css */
+
+.home .contact-section .common-title{
+    padding-top: 3rem;
+}
+.home .contact-section .form-section{
+    width: 55%;
+}
+.home form label{
+    margin-top: 10px;
+}
+
+/* footer section css  */
+
+.home .main-footer-section{
+    padding: 0 0 4rem 0;
+    color: var(--text);
+}
+
+.home .send-btn{
+    background-color: var(--primary)!important;
+    color: var(--background)!important;
+    padding: 10px 20px; ;
+    font-weight: 700;
+    border-radius: 8px;
+}
+.home .send-btn:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
