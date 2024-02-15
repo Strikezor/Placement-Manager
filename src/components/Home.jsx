@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -44,9 +45,9 @@ const Home = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to={'/login'}>
                     Login
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dark-mode">
                   <button onclick="changeIcon()" className="toggle-theme">
