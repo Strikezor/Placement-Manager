@@ -322,6 +322,10 @@ html {
 .home form label{
     margin-top: 10px;
 }
+.emailHelp{
+    font-size: 0.8rem;
+    color: var(--text);
+}
 
 /* footer section css  */
 

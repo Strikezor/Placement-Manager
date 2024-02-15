@@ -17,8 +17,8 @@ const Signup = () => {
           </div>
           <div className="col-12 col-lg-8 right">
             <div className="login-signup">
-              <div className="login">Login</div>
-              <div className="signup">Signup</div>
+            <div className="login"><Link to={'/login'}>Login</Link></div>
+              <div className="signup"><Link to={'/signup'}>Signup</Link></div>
             </div>
             <form action="">
               <button className="btn google">

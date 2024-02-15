@@ -27,37 +27,38 @@
   text-align: center;
 }
 
-.logo {
+.login .logo, .signup .logo {
   display: flex;
   flex-direction: row;
 }
-.logo i{
+.login .logo i, .signup .logo i {
     font-size: 5rem;
     margin: 10px;
     text-align: center;
 }
-.left h1{
+.login .left h1, .signup .left h1{
     font-family: Overlock SC;
     font-size: 3rem;   
     font-weight: 600;
 }
-.left h3{
+.login .left h3, .signup .left h3{
     font-family: Overlock SC;
     font-size: 1.6rem;
     font-weight: 400;
 }
-.left p{
+.login .left p, .signup .left p{
     font-style: italic;
     font-size: 1rem;
 }
 
-form input {
+.login form input, .signup form input{
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
   border: none;
 }
-form {
+.login form , 
+.signup form{
   margin: 10px;
   padding: 10px;
   display: flex;
@@ -66,7 +67,10 @@ form {
   width: 70%;
 }
 
-.login-btn, .signup-btn {
+.login .login-btn,
+.signup .signup-btn, 
+.login .signup-btn , 
+.signup .signup-btn{
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
@@ -75,12 +79,15 @@ form {
   color: black;
   cursor: pointer;
 }
-.login-btn:hover, .signup-btn:hover {
+.login .login-btn:hover,
+.signup .signup-btn:hover {
   background: var(--accent);
   color: white;
 }
-form input,
-form button {
+.login form input,
+.login form button, 
+.signup form input,
+.signup form button{
   width: 35vw !important;
   height: 50px;
 }
@@ -90,6 +97,7 @@ form button {
   background-color: #c54141;
   color: white;
   font-weight: bolder;
+  width: 35vw;
 }
 .google:hover {
   background-color: white;
@@ -105,7 +113,7 @@ form button {
     color: white;
     width: 90%;
 }
-hr{
+.login hr, .signup hr{
     width: 100%;
     margin: 10px;
     color: white;
