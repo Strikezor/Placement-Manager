@@ -9,9 +9,8 @@ const Signup = () => {
         <div className="row">
           <div className="col-12 col-lg-4 left">
             <div className="logo ">
-              <h1>
-                Placement <br /> Manager
-              </h1>
+            <i className="fa-solid fa-user-graduate" />
+            <h1>Placement <br/>Manager</h1>
             </div>
             <h3>Campus Recruitment Platform</h3>
             <p>Bridging the Gap between Education and Employment</p>
