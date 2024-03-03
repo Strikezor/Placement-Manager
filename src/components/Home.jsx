@@ -49,14 +49,6 @@ const Home = () => {
                     Login
                   </Link>
                 </li>
-                <li className="nav-item dark-mode">
-                  <button onclick="changeIcon()" className="toggle-theme">
-                    <i
-                      id="icon"
-                      className="toggle-theme fa-solid fa-moon text-center"
-                    ></i>
-                  </button>
-                </li>
               </ul>
             </div>
           </div>
