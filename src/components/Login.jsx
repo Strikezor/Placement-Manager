@@ -47,7 +47,9 @@ const Login = () => {
                 />
               </div>
               <button type="submit" className="btn login-btn">
-                Login
+                <Link to={'/console'}>
+                  Login
+                </Link>
               </button>
             </form>
           </div>
